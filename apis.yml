@@ -1,8 +1,25 @@
 aid: bluenote
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bluenote.png
 name: Bluenote
-description: 'Bluenote is a company surfaced as a portfolio company of electric-capital, lux-capital and
-  added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'Bluenote is an AI platform for life sciences that automates regulatory and clinical
+  documentation for pharmaceutical, medical device, diagnostic, and CDMO companies. Its AI agents,
+  workflow builder, document generation, dataset search, and translation tooling accelerate regulatory
+  submissions by 50-75% across the pre-clinical, clinical, CMC, regulatory, quality, and commercial
+  stages of the product lifecycle. Bluenote is an enterprise, sales-led company with no public API,
+  developer portal, or OpenAPI surface published as of this profile; it maintains a Vanta-hosted trust
+  center and a public privacy policy. Backed by Electric Capital and Lux Capital, tracked in the API
+  Evangelist network as a healthcare / life-sciences AI company.'
 url: https://raw.githubusercontent.com/api-evangelist/bluenote/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Life Sciences
+- Artificial Intelligence
+- Regulatory
+- Clinical Documentation
+- Pharmaceutical
+- AI Agents
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bluenote-domain-security.yml
 - type: Website
-  url: https://www.bluenotehealth.com/
+  url: https://www.bluenote.ai/
+- type: PrivacyPolicy
+  url: https://www.bluenote.ai/privacy-policy
+- type: TrustCenter
+  url: https://trust.bluenote.ai/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
